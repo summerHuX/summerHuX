@@ -52,10 +52,10 @@ def calculate_values(params):
 
 
 # Streamlit UI
-st.title("Enhanced Standard Waterfall Chart for Climate Finance Gap")
+st.title("Climate Finance Gap")
 st.write("Adjust the parameters to calculate finance gap and components.")
 
-# 动态生成用户可调整参数
+# Dynamic Parameters
 for param_name, initial_value in params.items():
     min_value = 0.5 * initial_value
     max_value = 1.5 * initial_value
@@ -101,8 +101,8 @@ starts = [0]
 for i in range(1, len(values)):
     starts.append(starts[-1] + values[i - 1])
 
-# 绘制瀑布图
-st.subheader("Enhanced Standard Waterfall Chart")
+# Waterfall
+st.subheader("Climate Finance Waterfall Chart")
 fig, ax = plt.subplots(figsize=(12, 6))
 
 # Color
